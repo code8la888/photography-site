@@ -14,10 +14,11 @@ export default function Home() {
   const [currentPage, setCurrentPage] = useState(1);
   //每頁的資料筆數
   const perPageItems = 8;
+  const api = process.env.REACT_APP_API_URL;
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const result = await axios.get("http://localhost:5000/images");
+        const result = await axios.get(api);
         // console.log(result.data);
         setImages([...result.data]);
         setFilteredImages([...result.data]);
