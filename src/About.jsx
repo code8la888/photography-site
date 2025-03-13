@@ -1,7 +1,7 @@
 import Button from "./components/Button";
 export default function About() {
   return (
-    <div className="grid h-full grid-cols-1 items-center justify-between gap-10 pb-8 pt-4 lg:grid-cols-2 lg:gap-20 lg:p-0">
+    <div className="grid h-full grid-cols-1 items-center justify-between gap-10 py-8 lg:grid-cols-2 lg:gap-20">
       <div className="grid items-center justify-center">
         <img
           className="h-full max-h-[450px] w-auto object-contain lg:shadow-lg"
